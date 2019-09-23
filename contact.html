@@ -4,10 +4,11 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>About | Eric Cadwell</title>
+  <title>Contact | Eric Cadwell</title>
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
   <link rel="stylesheet" type="text/css" href="assets/css/style.css">
   <link href="https://fonts.googleapis.com/css?family=Playfair+Display&display=swap" rel="stylesheet">
+
 </head>
 
 <body>
@@ -15,7 +16,7 @@
   <header id="masthead">
     <div class="container">
       <a href="index.html" id="logo">Eric Cadwell</a>
-        <ul class="nav justify-content-center">
+      <ul class="nav justify-content-center">
             <li class="nav-item">
               <a class="nav-link" href="file:///C:/Users/sammy/Basic-Portfolio/index.html">About Me</a>
             </li>
@@ -31,13 +32,25 @@
 
   <div id="main-container" class="container">
     <section class="main-section">
-      <h1>About Me</h1>
+      <h1>Contact</h1>
 
-      <img src="assets/images/cat.jpg" class="auth-image" alt="Your Name">
-
-      <p>Hi, my name is Eric Cadwell and this is the first website I have ever built. I have little to no experience in coding, but by the end of this course I am hoping to be a master. However, I am very close to mastering audio engineering as that is what I spend most of my free time doing. Perhaps I can join the Web Devoloping and Audio Engineering in my future.</p>
-
-      <p>I took this course to better my future and to hopefully one day change the future of technology. Combining a nice background and two technological fields should help me accomplish that goal.</p>
+      <form id="contact-form">
+        <ul>
+          <li>
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" placeholder="John Smith" required="required">
+          </li>
+          <li>
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="example@gmail.com" required="required">
+          </li>
+          <li>
+            <label for="message">Message</label>
+            <textarea id="message" name="message" required="required"></textarea>
+          </li>
+        </ul>
+        <input type="submit">
+      </form>
 
     </section>
 
